@@ -1,0 +1,25 @@
+@media screen and (max-width:360px) {
+    .MongoDB-content-holder-1 {
+        width: 100%;
+        display: block;
+
+    }
+
+    .MongoDB-content-holder-1-inner-area {
+        box-sizing: border-box;
+        padding: 13% 5% 0 5%;
+    }
+
+    .MongoDB-content-holder-2 {
+        display: none;
+    }
+
+    .reponsive-screen-View-the-schedule {
+        display: block;
+        width: 100%;
+        height: auto;
+        background-color: #00684a;
+        text-align: center;
+        padding: 6% 0;
+    }
+}

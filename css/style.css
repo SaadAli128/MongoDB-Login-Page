@@ -1,0 +1,281 @@
+/* ===========
+
+Template : MongoDB Login Page
+Colors : Green (#00684a) | White (#ffffff)
+Fonts : "MongoDB Value Serif" | "Euclid Circular A" | 
+Languages : HTML | CSS
+Version : 1.0
+Description : Crafting a login form template with soothing colors, carefully chosen to avoid straining the eyes, ensuring user comfort and suitability.
+Tags : html , css , login , signup , web template , login form , sign up for
+
+=========== */
+@font-face {
+    font-family: "Value Serif Pro Regular";
+    src: url("https://db.onlinewebfonts.com/t/cc5ff80d2d1b0b7c077eefae61d02261.eot");
+    src: url("https://db.onlinewebfonts.com/t/cc5ff80d2d1b0b7c077eefae61d02261.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/cc5ff80d2d1b0b7c077eefae61d02261.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/cc5ff80d2d1b0b7c077eefae61d02261.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/cc5ff80d2d1b0b7c077eefae61d02261.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/cc5ff80d2d1b0b7c077eefae61d02261.svg#Value Serif Pro Regular")format("svg");
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    background: none;
+    border: none;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Euclid Circular A";
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Euclid Circular A";
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.MongoDB-BG-white {
+    background: #ffffff;
+}
+
+.MongoDB-BG-green {
+    background: #00684a;
+}
+
+.MongoDB-green-tc {
+    color: #00684a;
+}
+
+.MongoDB-white-tc {
+    color: #fff;
+}
+
+.MongoDB-gray-tc {
+    color: #5c6c75;
+}
+
+.MongoDB-darkgray-tc {
+    color: #3d4f58;
+}
+
+.MongoDB-skyblue-tc {
+    color: #016bf8;
+}
+
+.MongoDB-container {
+    width: 100%;
+    height: auto;
+}
+
+.MongoDB-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+}
+
+.MongoDB-content-holder-1 {
+    width: 25%;
+}
+
+.MongoDB-content-holder-2 {
+    width: 75%;
+}
+
+.MongoDB-content-holder-1-inner-area {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13% 10% 0 10%;
+}
+
+.MongoDB-logo img {
+    width: 50%;
+}
+
+.MongoDB-holder-1-info-1 h2 {
+    font-size: 36px;
+    font-weight: 300;
+    font-family: "Value Serif Pro Regular";
+    padding: 8% 0 5% 0;
+    color: #00684a;
+}
+
+.MongoDB-holder-1-info-1 h3 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1c2d38;
+    font-family: 'Euclid Circular A', sans-serif;
+    padding: 4% 0 8% 0;
+}
+
+.MongoDB-holder-1-info-1-btn-group {
+    margin: 5% 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.butn-google img,
+.butn-github img {
+    width: 8%;
+    margin-right: 10px;
+}
+
+.butn-google,
+.butn-github {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid #ababab;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease-in-out 200ms;
+}
+
+.a-butn-google,
+.a-butn-github {
+    display: inline-block;
+    width: 100%;
+}
+
+.a-butn-github {
+    margin-top: 10px;
+}
+
+.butn-google:hover,
+.butn-github:hover {
+    box-shadow: 0 0 5px #a8a8a8;
+}
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #ccc;
+    margin: 0 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="email"]:focus {
+    border: 2px solid #00684a;
+    box-shadow: 0 0 5px #00684a;
+}
+
+.butn-google,
+.butn-github {
+    padding: 10px 20px;
+    border: none;
+    background-color: #00684a;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease-in-out 400ms;
+    border: 0px solid #ffffff;
+
+}
+
+.butn-google:hover,
+.butn-github:hover {
+    box-shadow: 0 0 5px #080808;
+}
+
+.button-next {
+    background-color: #00684a;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.button-next:hover {
+    background-color: #00684a;
+}
+.MongoDB-content-holder-2-inner-area{
+    width: 40%;
+    box-sizing: border-box;
+    height: 100vh;
+    float: left;
+    padding: 6%;
+
+}
+.MongoDB-content-holder-2-inner-area h2{
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 40px;
+    font-family: 'Euclid Circular A', sans-serif;
+}
+.MongoDB-content-holder-2-inner-area p,.View-the-schedule{
+    font-size: 16px;
+    color: #fff;
+    margin: 10% 0 5% 0;
+    line-height: 24px;
+    font-family: 'Euclid Circular A', sans-serif;
+}
+.View-the-schedule{
+    margin: 0;
+    font-weight: 700;
+    border-bottom: 1px solid #ffffff;
+    padding: 0 0 5px 0;
+}
+.View-the-schedule span i{
+    border-bottom: none;
+    margin: 0 0 0 10px;
+}
+.MongoDB-content-holder-2-inner-img-area{
+    width: 60%;
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.MongoDB-content-holder-2-inner-img-area img{
+    float: right;
+    width: 95%;
+    margin: 0 5% 0 0;
+
+}
+.reponsive-screen-View-the-schedule{
+    display: none;
+}
